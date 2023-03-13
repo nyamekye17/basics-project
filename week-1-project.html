@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cupcakes</title>
+  </head>
+  <style>
+    body{
+         font-family: Verdana, Arial, Helvetica, sans-serif;
+         width: 80%;
+         margin: 0 auto;
+         background-color: azure;
+    }
+    h1{
+        text-align: center;
+        font-weight: bold;
+        font-size: 34px;
+        color: lavenderblush;
+        border: 1px solid lavenderblush;
+        padding: 25px 40px;
+        border-radius: 10px;
+    }
+    h2{
+        text-align: center;
+        font-weight: 400;
+        font-family: cursive;
+        color: lavenderblush;
+    }
+    p{
+        color: lavenderblush;
+        font-size: 24px;
+        line-height: 2;
+
+    }
+    img{
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+        max-width: 80%;
+    }
+    button{
+        display: block;
+        margin: 0 auto;
+        padding: 20px 40px;
+        border: none;
+        border-radius: 40px;
+        box-shadow: 3px 3px 5px   rgba(0, 0, 0, 0.3);
+        font-size: 24px;
+        transition: all 200ms ease-in-out;
+        background: blueviolet;
+        color: lavenderblush;
+        cursor: pointer;
+    }
+    button:hover{
+        background: lavenderblush;
+        color: blueviolet;
+        opacity: 0.9;
+    }
+
+    span{
+        color: blueviolet;
+    }
+
+    a{
+        display: block;
+        text-decoration: none;
+        color: plum;
+        margin-bottom: 35px;
+
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+
+    .container{
+        display: block;
+        padding: 30px 50px;
+        margin: 0 auto;
+        background: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 30px;
+    }
+    .footer{
+        font-size: 16px;
+        text-align: center;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Cupcakes are great!</h1>
+      <h2>
+        <em>The best dessert ever</em>
+      </h2>
+      <hr />
+      <p>
+        <strong>Cupcakes</strong> are small cakes designed to serve one person,
+        which may be baked in a small thin paper or aluminum cup. As with larger
+        cakes, frosting and other cake decorations such as fruit and candy may
+        be applied.
+      </p>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/458/original/cupcakez.jpg?1671381667"
+        alt="Different cupcake flavors"
+      />
+      <p>
+        Moist, perfect cupcakes everyone will love. Recipes with photos and
+        reviews for vanilla cupcakes, cupcake frosting, mini cupcakes and more.
+      </p>
+      <a
+        href="https://www.allrecipes.com/recipes/377/desserts/cakes/cupcakes/"
+        target="_blank"
+        >Click here for recipes</a
+      >
+      <button>🧁 Join the community</button>
+      <br />
+      <p class="footer">Coded by <span>Nana Aba Acquah</span></p>
+    </div>
+    <script>
+      function joinUs() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address");
+        let cupcake = prompt("What is your favourite cupcake flavor?");
+
+        if (name === "") {
+          alert("Thank you. We will be in touch via email 😀");
+        } else {
+          alert("Thank you " + name + ". We will be in touch via email 😀");
+        }
+      }
+
+      let joinButton = document.querySelector("button");
+      joinButton.addEventListener("click", joinUs);
+    </script>
+  </body>
+</html>
